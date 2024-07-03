@@ -1,2 +1,2 @@
-# TransLinguistBot
-A translation bot with linguistic knowledge
+# Linguist_BA_Model
+A BA processing model

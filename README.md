@@ -1,2 +1,2 @@
-# Linguist_BA_Model
-A BA processing model
+# BA_Model
+A linguistics-based BA processing model

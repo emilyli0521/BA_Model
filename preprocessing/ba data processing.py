@@ -11,14 +11,14 @@ def preprocess(fileName):
     content = content.replace("more", "")
 
     pattern = r"把[^，。？！；：]*[，。？！；：]"
-    matched_sentences = re.findall(pattern, processed_content)
+    matched_sentences = re.findall(pattern, content)
 
     return matched_sentences
 
 
 
 if __name__ == "__main__":
-    fileNameSTR = "ba raw data.txt"
+    fileNameSTR = "ba_raw_data.txt"
     processed_content = preprocess(fileNameSTR)
     print(processed_content)
     #for match in processed_content:

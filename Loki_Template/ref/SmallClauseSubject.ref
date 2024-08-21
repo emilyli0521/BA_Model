@@ -1,0 +1,254 @@
+{
+    "language": "zh-tw",
+    "type": "advance",
+    "version": {
+        "atk": "v271",
+        "intent": "1.0"
+    },
+    "user_defined": {
+        "as_noun": [
+            "廟會",
+            "七葷八素",
+            "烏利亞",
+            "高山",
+            "都委會",
+            "拔示巴"
+        ]
+    },
+    "utterance": {
+        "把我當作": {
+            "id": "e3006cbc-aaad-4b79-b981-9b4609648a03",
+            "pos": "<ACTION_lightVerb>把</ACTION_lightVerb><ENTITY_pronoun>我</ENTITY_pronoun><ACTION_verb>當作</ACTION_verb>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(當作|當成|當做|視作|看成|視為|作為|看做|當成了|看作|認作)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<ACTION_lightVerb>把</ACTION_lightVerb>(<ENTITY_pronoun>[^<]+</ENTITY_pronoun>)?<(ACTION_verb|VerbP)>當作</(ACTION_verb|VerbP)>"
+        },
+        "把高山當": {
+            "id": "2fe2a33b-4c91-402b-968b-c213024c24e1",
+            "pos": "<ACTION_lightVerb>把</ACTION_lightVerb><UserDefined>高山</UserDefined><ENTITY_oov>當</ENTITY_oov>",
+            "lexy": [],
+            "pattern": "<ACTION_lightVerb>[^<]+</ACTION_lightVerb><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>當</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>"
+        },
+        "把名片改成": {
+            "id": "118b0b56-1df8-41d8-97b1-65ac7ef6a573",
+            "pos": "<ACTION_lightVerb>把</ACTION_lightVerb><ENTITY_nouny>名片</ENTITY_nouny><ACTION_verb>改成</ACTION_verb>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(改成|修改|改動|改口|改換|改易|改為|改編|改裝|改造|合用)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<ACTION_lightVerb>把</ACTION_lightVerb><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))><(ACTION_verb|VerbP)>改成</(ACTION_verb|VerbP)>"
+        },
+        "把家父當做": {
+            "id": "8e47a1aa-8e99-430f-8848-1a37a9966121",
+            "pos": "<ACTION_lightVerb>把</ACTION_lightVerb><ENTITY_noun>家</ENTITY_noun><ENTITY_nounHead>父</ENTITY_nounHead><ACTION_verb>當做</ACTION_verb>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(當做|看做|看作|算作|視作|認作|顯得|顯露出|當成了|當作了|當成)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<ACTION_lightVerb>把</ACTION_lightVerb>(<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>){1,}<(ACTION_verb|VerbP)>當做</(ACTION_verb|VerbP)>"
+        },
+        "把技藝傳給": {
+            "id": "a71eb352-a05a-49eb-8b04-de6ee5c2111b",
+            "pos": "<ACTION_lightVerb>把</ACTION_lightVerb><ENTITY_noun>技藝</ENTITY_noun><ACTION_verb>傳</ACTION_verb><ACTION_verb>給</ACTION_verb>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(傳|傳等|傳下|傳˙|素傳|靠傳|傳號|深傳|載傳|傳中|傳ⅲ)</(ACTION_verb|VerbP)>",
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(給|供給|帶給|提供|發放|資助|給對|分給|留給|交給|送給)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<ACTION_lightVerb>把</ACTION_lightVerb>(<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>){1,}<(ACTION_verb|VerbP)>傳</(ACTION_verb|VerbP)><(ACTION_verb|VerbP)>給</(ACTION_verb|VerbP)>"
+        },
+        "把眼皮睜開": {
+            "id": "611ae7ef-321b-4e77-becf-df2e3be03142",
+            "pos": "<ACTION_lightVerb>把</ACTION_lightVerb><ENTITY_nouny>眼皮</ENTITY_nouny><ACTION_verb>睜開</ACTION_verb>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(睜開|睜眼|瞪大了|睜著|瞎了|閉著|睜開了|矇住|瞪大|瞇著|刺瞎)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<ACTION_lightVerb>把</ACTION_lightVerb>(<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>){1,}<(ACTION_verb|VerbP)>睜開</(ACTION_verb|VerbP)>"
+        },
+        "把編制壓到": {
+            "id": "3ec8c71a-919f-4334-9d22-9d5fb9b1dd9f",
+            "pos": "<ACTION_lightVerb>把</ACTION_lightVerb><ENTITY_nouny>編制</ENTITY_nouny><ACTION_verb>壓到</ACTION_verb>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(壓到|撞斷|壓住|砸到|絆倒|夾住|扯斷|刺破|撞到|剪斷|切掉)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<ACTION_lightVerb>把</ACTION_lightVerb><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))><(ACTION_verb|VerbP)>壓到</(ACTION_verb|VerbP)>"
+        },
+        "把特別法變成": {
+            "id": "29c85fab-b6d4-4902-9acb-670c33fe417e",
+            "pos": "<ACTION_lightVerb>把</ACTION_lightVerb><ENTITY_nouny>特別法</ENTITY_nouny><ACTION_verb>變成</ACTION_verb>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(變成|變作|化作|變為了|轉化成|變回|成了|變成了|轉成|轉變成|成為)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<ACTION_lightVerb>把</ACTION_lightVerb><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))><(ACTION_verb|VerbP)>變成</(ACTION_verb|VerbP)>"
+        },
+        "把網咖轉型成": {
+            "id": "6d237a93-608a-44d3-b577-dbc15bba9c4a",
+            "pos": "<ACTION_lightVerb>把</ACTION_lightVerb><ENTITY_noun>網咖</ENTITY_noun><ACTION_verb>轉型成</ACTION_verb>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(轉型成|發展成|跨足|跨入|轉型|升級為|普及化|搶進|重振|轉變成)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<ACTION_lightVerb>把</ACTION_lightVerb>(<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>){1,}<(ACTION_verb|VerbP)>轉型成+</(ACTION_verb|VerbP)>"
+        },
+        "把自主班當作": {
+            "id": "3a959205-e780-4ef7-9728-21f1c44ed3d5",
+            "pos": "<ACTION_lightVerb>把</ACTION_lightVerb><ENTITY_nouny>自主班</ENTITY_nouny><ACTION_verb>當作</ACTION_verb>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(當作|當成|當做|視作|看成|視為|作為|看做|當成了|看作|認作)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<ACTION_lightVerb>把</ACTION_lightVerb><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))><(ACTION_verb|VerbP)>當作</(ACTION_verb|VerbP)>"
+        },
+        "把頭抬起來，": {
+            "id": "ca0fa398-5e71-4c83-bf33-c7e3072161d8",
+            "pos": "<ACTION_lightVerb>把</ACTION_lightVerb><ENTITY_nouny>頭</ENTITY_nouny><ACTION_verb>抬起來</ACTION_verb>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(抬起來|抬起|拉起來|舉到|拔出來|弄斷|砍去|翻過來|扯斷|勾住|拿下來)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<ACTION_lightVerb>把</ACTION_lightVerb><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))><(ACTION_verb|VerbP)>抬起來</(ACTION_verb|VerbP)>"
+        },
+        "把省議會改名為": {
+            "id": "2dce30bf-dbdd-4db2-83c3-045153df5d81",
+            "pos": "<ACTION_lightVerb>把</ACTION_lightVerb><ENTITY_nouny>省議會</ENTITY_nouny><ACTION_verb>改名</ACTION_verb><AUX>為</AUX>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(改名|改稱|更名|升格|降格|定名|改制|改組|改設|改製|取名為)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<ACTION_lightVerb>把</ACTION_lightVerb><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))><(ACTION_verb|VerbP)>改名</(ACTION_verb|VerbP)>(<AUX>[^<]+</AUX>)?"
+        },
+        "把美味小吃當成": {
+            "id": "3ad087cd-cb0b-4213-a5a3-32a34cdf91b1",
+            "pos": "<ACTION_lightVerb>把</ACTION_lightVerb><MODIFIER>美味</MODIFIER><ENTITY_nounHead>小吃</ENTITY_nounHead><ACTION_verb>當成</ACTION_verb>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(當成|當作|當做|看成|視作|視為|當成了|看做|認作|說成|看作)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<ACTION_lightVerb>把</ACTION_lightVerb>(<(MODIFIER|ModifierP)>[^<]+</(MODIFIER|ModifierP)>)?<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))><(ACTION_verb|VerbP)>當成+</(ACTION_verb|VerbP)>"
+        },
+        "把人身去換金錢，": {
+            "id": "326c9561-72fc-4d71-b55f-d001b214614f",
+            "pos": "<ACTION_lightVerb>把</ACTION_lightVerb><ENTITY_nouny>人身</ENTITY_nouny><ACTION_verb>去</ACTION_verb><ACTION_verb>換</ACTION_verb><ENTITY_noun>金錢</ENTITY_noun>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(去|要去|回去|想去|去了|跑去|回來|跑來|趕去|出去|來)</(ACTION_verb|VerbP)>",
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(換|更換|換了|買|換到|轉換|換回|換成|有換|拆開|換購)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<ACTION_lightVerb>把</ACTION_lightVerb><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))><(ACTION_verb|VerbP)>去</(ACTION_verb|VerbP)><(ACTION_verb|VerbP)>換</(ACTION_verb|VerbP)><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>"
+        },
+        "把一般民間消費當成": {
+            "id": "c7e8d304-b062-4ee4-a83c-5228b21a5a9b",
+            "pos": "<ACTION_lightVerb>把</ACTION_lightVerb><MODIFIER>一般</MODIFIER><ENTITY_nounHead>民間</ENTITY_nounHead><ACTION_verb>消費</ACTION_verb><ACTION_verb>當成</ACTION_verb>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(消費|枉費|浪費|消耗|白費|破費|耗費|花費|費了|度過|花掉)</(ACTION_verb|VerbP)>",
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(當成|當作|當做|看成|視作|視為|當成了|看做|認作|說成|看作)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<ACTION_lightVerb>把</ACTION_lightVerb>(<(MODIFIER|ModifierP)>[^<]+</(MODIFIER|ModifierP)>)?(<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>){1,}<(ACTION_verb|VerbP)>[^讓趕貪寄拿丟]+</(ACTION_verb|VerbP)><(ACTION_verb|VerbP)>當成</(ACTION_verb|VerbP)>"
+        },
+        "把入冬的台北粧點成": {
+            "id": "8636716d-f53b-4dd1-b28f-af6300015116",
+            "pos": "<ACTION_lightVerb>把</ACTION_lightVerb><ACTION_verb>入</ACTION_verb><TIME_season>冬</TIME_season><FUNC_inner>的</FUNC_inner><ENTITY_nouny>台北粧</ENTITY_nouny><QUANTIFIER>點</QUANTIFIER><ENTITY_nouny>成</ENTITY_nouny>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(入|入了|進|總入|有入|進了|入處|進入|攻入|誇下|入進)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<ACTION_lightVerb>把</ACTION_lightVerb><(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>(<TIME_(holiday|justtime|day|week|month|season|year|decade)>[^<]+</TIME_(holiday|justtime|day|week|month|season|year|decade)>){1,10}(<FUNC_in(ner|ter)>[^<]+</FUNC_in(ner|ter)>)?(<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>){1,}(<QUANTIFIER>[^<]+</QUANTIFIER>)?<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>"
+        },
+        "把網咖業者當賊看。": {
+            "id": "52e2e1a7-65cc-4516-85f1-8766f2549811",
+            "pos": "<ACTION_lightVerb>把</ACTION_lightVerb><ENTITY_noun>網咖</ENTITY_noun><ENTITY_noun>業者</ENTITY_noun><ACTION_verb>當</ACTION_verb><ENTITY_nounHead>賊</ENTITY_nounHead><ACTION_verb>看</ACTION_verb>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(當|據當|供當|指當|令當|收酒|幫當|當水|佔當)</(ACTION_verb|VerbP)>",
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(看|探看|收看|看守|看戲|看望|看護|看顧|觀看|光顧|探望)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<ACTION_lightVerb>把</ACTION_lightVerb>(<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>){1,}<(ACTION_verb|VerbP)>當</(ACTION_verb|VerbP)><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))><(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>"
+        },
+        "把他們笑得都不敢哭了": {
+            "id": "4a58ea60-2f59-4bee-a1e5-36b07e79ec96",
+            "pos": "<ACTION_lightVerb>把</ACTION_lightVerb><ENTITY_pronoun>他們</ENTITY_pronoun><ACTION_verb>笑得</ACTION_verb><QUANTIFIER>都</QUANTIFIER><FUNC_negation>不</FUNC_negation><VerbP>敢哭了</VerbP>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(笑得|直誇|直喊|聽得|笑出來|噴淚|笑問|看得|哭得|哭出來|惹得)</(ACTION_verb|VerbP)>",
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(敢哭了|)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<ACTION_lightVerb>把</ACTION_lightVerb>(<ENTITY_pronoun>[^<]+</ENTITY_pronoun>)?<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>(<QUANTIFIER>[^<]+</QUANTIFIER>)?<FUNC_negation>[^<]+</FUNC_negation><(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>"
+        },
+        "把公車路線與捷運接軌，": {
+            "id": "2b4017b9-8f54-48ea-8c8f-fd5160aa4a44",
+            "pos": "<ACTION_lightVerb>把</ACTION_lightVerb><ENTITY_noun>公車</ENTITY_noun><ENTITY_noun>路線</ENTITY_noun><FUNC_conjunction>與</FUNC_conjunction><ENTITY_nouny>捷運</ENTITY_nouny><ACTION_verb>接軌</ACTION_verb>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(接軌|對接|接合|接線|接通|搭接|銜接|交結|整合|納入|結合)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<ACTION_lightVerb>把</ACTION_lightVerb>(<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>){1,}<FUNC_conjunction>[^<]+</FUNC_conjunction>(<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>){1,}<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>"
+        },
+        "應該把日本文化傳到台灣。": {
+            "id": "ca2a02f4-8e3b-4a2c-b042-fc55cd7f0495",
+            "pos": "<MODAL>應該</MODAL><ACTION_lightVerb>把</ACTION_lightVerb><LOCATION>日本</LOCATION><ENTITY_noun>文化</ENTITY_noun><ACTION_verb>傳到</ACTION_verb><LOCATION>台灣</LOCATION>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(傳到|傳到了|傳回|傳來|傳遍|傳入|傳遍了|傳抵|傳開|傳來了|傳進)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "(<MODAL>[^<]+</MODAL>)?<ACTION_lightVerb>把</ACTION_lightVerb><LOCATION>[^<]+</LOCATION>(<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>){1,}<(ACTION_verb|VerbP)>[^娶]+</(ACTION_verb|VerbP)><LOCATION>[^<]+</LOCATION>"
+        },
+        "把中央和地方增減數目相抵，": {
+            "id": "aeb2ada5-adef-44eb-a464-6e6d2578c12f",
+            "pos": "<ACTION_lightVerb>把</ACTION_lightVerb><RANGE_locality>中央</RANGE_locality><FUNC_conjunction>和</FUNC_conjunction><ENTITY_noun>地方</ENTITY_noun><ACTION_verb>增減</ACTION_verb><ENTITY_noun>數目</ENTITY_noun><ACTION_verb>相抵</ACTION_verb>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(增減|遞減|遞增|變動|增加|調整|減小|衰減|略減|增大|減少)</(ACTION_verb|VerbP)>",
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(相抵|抵償|抵充|抵補|補回|抵消|執毛|請警|相減|抵銷|相乘)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<ACTION_lightVerb>把</ACTION_lightVerb><RANGE_(locality|period)>[^<]+</RANGE_(locality|period)><FUNC_conjunction>[^<]+</FUNC_conjunction><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))><(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))><(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>"
+        },
+        "把墨色的變化發揮到了極致，": {
+            "id": "731e5e4d-88e6-4e7f-9ce5-19d1dc743c1b",
+            "pos": "<ACTION_lightVerb>把</ACTION_lightVerb><MODIFIER_color>墨色</MODIFIER_color><FUNC_inner>的</FUNC_inner><ACTION_verb>變化</ACTION_verb><ACTION_verb>發揮</ACTION_verb><VerbP>到了</VerbP><MODIFIER>極致</MODIFIER>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(變化|變動|變換|修改|改動|改換|異動|變遷|轉變|偏移|波動)</(ACTION_verb|VerbP)>",
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(發揮|發揮出|發揮了|展現|發揮著|施展|彰顯|體現|突顯|借重|展現了)</(ACTION_verb|VerbP)>",
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(到了|到|到約|來到|來到了|到達了|到離|到為了|到臨|走到了|跑到)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<ACTION_lightVerb>把</ACTION_lightVerb><MODIFIER_color>[^<]+</MODIFIER_color>(<FUNC_in(ner|ter)>[^<]+</FUNC_in(ner|ter)>)?<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)><(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)><(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>(<(MODIFIER|ModifierP)>[^<]+</(MODIFIER|ModifierP)>)?"
+        },
+        "把人身去換金你說是不是有鬼！": {
+            "id": "a94c90f7-96f5-473d-8037-5b40c9e8eae0",
+            "pos": "<ACTION_lightVerb>把</ACTION_lightVerb><ENTITY_nouny>人身</ENTITY_nouny><ACTION_verb>去</ACTION_verb><ACTION_verb>換</ACTION_verb><MODIFIER_color>金</MODIFIER_color><ENTITY_pronoun>你</ENTITY_pronoun><ACTION_verb>說</ACTION_verb><CLAUSE_AnotAQ>是不是</CLAUSE_AnotAQ><ACTION_verb>有</ACTION_verb><ENTITY_nouny>鬼</ENTITY_nouny>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(去|要去|回去|想去|去了|跑去|回來|跑來|趕去|出去|來)</(ACTION_verb|VerbP)>",
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(換|更換|換了|買|換到|轉換|換回|換成|有換|拆開|換購)</(ACTION_verb|VerbP)>",
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(說|演說|說話|宣判|拼讀|談到|辯護|說真|有說|講出|說過)</(ACTION_verb|VerbP)>",
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(有|具有|兼有|存有|帶有|懷有|持有|擁有|有了|有著|保留)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<ACTION_lightVerb>把</ACTION_lightVerb><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))><(ACTION_verb|VerbP)>去</(ACTION_verb|VerbP)><(ACTION_verb|VerbP)>換</(ACTION_verb|VerbP)><MODIFIER_color>[^<]+</MODIFIER_color>(<ENTITY_pronoun>[^<]+</ENTITY_pronoun>)?<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)><CLAUSE_AnotAQ>[^<]+</CLAUSE_AnotAQ><(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>"
+        },
+        "把玉雕風格質與量與興衰劃分成": {
+            "id": "5db8e186-322f-4fa8-afbd-8db3832bf9ae",
+            "pos": "<ACTION_lightVerb>把</ACTION_lightVerb><ENTITY_nouny>玉</ENTITY_nouny><ACTION_verb>雕</ACTION_verb><ENTITY_nouny>風格質</ENTITY_nouny><FUNC_conjunction>與</FUNC_conjunction><ACTION_verb>量</ACTION_verb><FUNC_conjunction>與</FUNC_conjunction><ENTITY_nouny>興</ENTITY_nouny><ACTION_verb>衰劃</ACTION_verb><ACTION_verb>分成</ACTION_verb>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(雕|雕刻|雕塑|雕琢|雕鐫|雕飾|雕等|兼雕|浮雕|雕成|雕佛)</(ACTION_verb|VerbP)>",
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(量|估量|度量|測量|量度|量測|量身|估測|合算|掐算|推估)</(ACTION_verb|VerbP)>",
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(衰劃|)</(ACTION_verb|VerbP)>",
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(分成|分化|分手|分擔|分攤|分散|分發|分裂|分裝|分配|分開)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<ACTION_lightVerb>把</ACTION_lightVerb>(<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>){1,}<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))><FUNC_conjunction>[^<]+</FUNC_conjunction><(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)><FUNC_conjunction>[^<]+</FUNC_conjunction><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))><(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)><(ACTION_verb|VerbP)>分成</(ACTION_verb|VerbP)>"
+        },
+        "把中央部會總數由現行的卅六個下修到": {
+            "id": "191268b7-a862-4ddb-a23b-0d7a9286cccc",
+            "pos": "<ACTION_lightVerb>把</ACTION_lightVerb><RANGE_locality>中央</RANGE_locality><ENTITY_oov>部會</ENTITY_oov><ENTITY_nouny>總數</ENTITY_nouny><FUNC_inner>由</FUNC_inner><MODIFIER>現行</MODIFIER><FUNC_inner>的</FUNC_inner><ENTITY_classifier>卅六個</ENTITY_classifier><ACTION_verb>下修</ACTION_verb><ACTION_verb>到</ACTION_verb>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(下修|調降|下調|調升|回升|跳升|回落|飆升|攀升|下降|下滑)</(ACTION_verb|VerbP)>",
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(到|到了|到約|到受|到離|到包|到經過|到回|到隨|到死|到愛)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<ACTION_lightVerb>把</ACTION_lightVerb>(<RANGE_(locality|period)>[^<]+</RANGE_(locality|period)>)?(<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>){1,}(<FUNC_in(ner|ter)>[^<]+</FUNC_in(ner|ter)>)?(<(MODIFIER|ModifierP)>[^<]+</(MODIFIER|ModifierP)>)?(<FUNC_in(ner|ter)>[^<]+</FUNC_in(ner|ter)>)?<ENTITY_classifier>[^<]+</ENTITY_classifier><(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)><(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>"
+        },
+        "把故事結束掉的每個深夜兀自唐突地發光。": {
+            "id": "2d94929a-6f17-43d1-830c-4f2538596fe9",
+            "pos": "<ACTION_lightVerb>把</ACTION_lightVerb><ENTITY_noun>故事</ENTITY_noun><ACTION_verb>結束</ACTION_verb><ACTION_verb>掉</ACTION_verb><FUNC_inner>的</FUNC_inner><ENTITY_DetPhrase>每個</ENTITY_DetPhrase><TIME_day>深夜</TIME_day><MODIFIER>兀自</MODIFIER><ModifierP>唐突地</ModifierP><ACTION_verb>發光</ACTION_verb>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(結束|了結|歸結|終結|結算|總結|了斷|倒閉|做到|停止|停辦)</(ACTION_verb|VerbP)>",
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(掉|壓擠|挨擠|擠壓|丟|丟掉|洗掉|爛掉|撿起|扔掉|切掉)</(ACTION_verb|VerbP)>",
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(發光|閃光|快活|播送|放射|映照|普照|煥發|照射|燦笑|發射)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<ACTION_lightVerb>把</ACTION_lightVerb><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))><(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)><(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>(<FUNC_in(ner|ter)>[^<]+</FUNC_in(ner|ter)>)?<ENTITY_DetPhrase>[^<]+</ENTITY_DetPhrase>(<TIME_(holiday|justtime|day|week|month|season|year|decade)>[^<]+</TIME_(holiday|justtime|day|week|month|season|year|decade)>){1,10}(<(MODIFIER|ModifierP)>[^<]+</(MODIFIER|ModifierP)>)?(<(MODIFIER|ModifierP)>[^<]+</(MODIFIER|ModifierP)>)?<(ACTION_verb|VerbP)>發光</(ACTION_verb|VerbP)>"
+        },
+        "把國民黨主席連戰、親民黨主席宋楚瑜、新黨都罵光了，": {
+            "id": "71c19043-459b-4b3a-b233-701c77fd2e42",
+            "pos": "<ACTION_lightVerb>把</ACTION_lightVerb><ENTITY_noun>國民黨</ENTITY_noun><ENTITY_noun>主席</ENTITY_noun><ENTITY_person>連戰</ENTITY_person><MODIFIER>親民</MODIFIER><ENTITY_nouny>黨主席</ENTITY_nouny><ENTITY_person>宋楚瑜</ENTITY_person><ENTITY_noun>新黨</ENTITY_noun><QUANTIFIER>都</QUANTIFIER><ACTION_verb>罵</ACTION_verb><ENTITY_oov>光</ENTITY_oov><ASPECT>了</ASPECT>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(罵|叱罵|咒罵|惡罵|斥罵|暗罵|痛罵|罵人|詬罵|責罵|辱罵)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<ACTION_lightVerb>把</ACTION_lightVerb><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>(<ENTITY_person>[^<]+</ENTITY_person>)?(<(MODIFIER|ModifierP)>[^<]+</(MODIFIER|ModifierP)>)?<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>(<ENTITY_person>[^<]+</ENTITY_person>)?<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>(<QUANTIFIER>[^<]+</QUANTIFIER>)?<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>(<ASPECT>[^<]+</ASPECT>)?"
+        }
+    },
+    "alias": {},
+    "prompt": {},
+    "document": []
+}

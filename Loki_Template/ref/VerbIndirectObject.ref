@@ -1,0 +1,94 @@
+{
+    "language": "zh-tw",
+    "type": "advance",
+    "version": {
+        "atk": "v271",
+        "intent": "1.0"
+    },
+    "user_defined": {
+        "as_noun": [
+            "老王"
+        ]
+    },
+    "utterance": {
+        "把她問了": {
+            "id": "fb295160-76d6-42c7-bc62-b755dab89028",
+            "pos": "<ACTION_lightVerb>把</ACTION_lightVerb><ENTITY_pronoun>她</ENTITY_pronoun><VerbP>問了</VerbP>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(問了|回答了|問過|講了|說了|詢問了|提了|反問|想了|想問|問道)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<ACTION_lightVerb>把</ACTION_lightVerb><ENTITY_pronoun>[^<]+</ENTITY_pronoun><(ACTION_verb|VerbP)>問了</(ACTION_verb|VerbP)>"
+        },
+        "把她們哭得": {
+            "id": "3eb2577b-c737-458c-9012-755d7a187311",
+            "pos": "<ACTION_lightVerb>把</ACTION_lightVerb><ENTITY_pronoun>她們</ENTITY_pronoun><ACTION_verb>哭得</ACTION_verb>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(哭得|笑出來|想罵|直喊|睡去|哭到|呆|長嘆|嚇傻|聽得|號啕)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<ACTION_lightVerb>把</ACTION_lightVerb><ENTITY_pronoun>[^<]+</ENTITY_pronoun><(ACTION_verb|VerbP)>哭得</(ACTION_verb|VerbP)>"
+        },
+        "把她們笑得": {
+            "id": "06defeac-4db9-46aa-aa04-2ab0f94e7f07",
+            "pos": "<ACTION_lightVerb>把</ACTION_lightVerb><ENTITY_pronoun>她們</ENTITY_pronoun><ACTION_verb>笑得</ACTION_verb>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(笑得|直誇|直喊|聽得|笑出來|噴淚|笑問|看得|哭得|哭出來|惹得)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<ACTION_lightVerb>把</ACTION_lightVerb><ENTITY_pronoun>[^<]+</ENTITY_pronoun><(ACTION_verb|VerbP)>笑得</(ACTION_verb|VerbP)>"
+        },
+        "把小明哭得": {
+            "id": "91f4f2df-cf25-45c7-8ebe-a51251da500b",
+            "pos": "<ACTION_lightVerb>把</ACTION_lightVerb><ENTITY_nouny>小明</ENTITY_nouny><ACTION_verb>哭得</ACTION_verb>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(哭得|笑出來|想罵|直喊|睡去|哭到|呆|長嘆|嚇傻|聽得|號啕)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<ACTION_lightVerb>把</ACTION_lightVerb>(<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>){1,}<(ACTION_verb|VerbP)>哭得</(ACTION_verb|VerbP)>"
+        },
+        "把小明問了": {
+            "id": "3dadd5d3-d164-423c-ac16-5edf1c5b1422",
+            "pos": "<ACTION_lightVerb>把</ACTION_lightVerb><ENTITY_nouny>小明</ENTITY_nouny><VerbP>問了</VerbP>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(問了|回答了|問過|講了|說了|詢問了|提了|反問|想了|想問|問道)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<ACTION_lightVerb>把</ACTION_lightVerb>(<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>){1,}<(ACTION_verb|VerbP)>問了</(ACTION_verb|VerbP)>"
+        },
+        "把小明笑得": {
+            "id": "af44d393-8554-493f-a28d-558399cf5596",
+            "pos": "<ACTION_lightVerb>把</ACTION_lightVerb><ENTITY_nouny>小明</ENTITY_nouny><ACTION_verb>笑得</ACTION_verb>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(笑得|直誇|直喊|聽得|笑出來|噴淚|笑問|看得|哭得|哭出來|惹得)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<ACTION_lightVerb>把</ACTION_lightVerb>(<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>){1,}<(ACTION_verb|VerbP)>笑得</(ACTION_verb|VerbP)>"
+        },
+        "把被單睡得": {
+            "id": "16e8f0e6-2f8d-4b0b-82c6-aae4714e742a",
+            "pos": "<ACTION_lightVerb>把</ACTION_lightVerb><ENTITY_nouny>被單</ENTITY_nouny><ACTION_verb>睡得</ACTION_verb>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(睡得|常睡|剛烤|像住|煮意|睏|唱得|保留完|避事|達勝|跳得)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<ACTION_lightVerb>把</ACTION_lightVerb>(<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>){1,}<(ACTION_verb|VerbP)>睡得</(ACTION_verb|VerbP)>"
+        },
+        "把他問得哭了出來": {
+            "id": "7d3ddde7-9a83-4356-ab33-da4cd9b746d4",
+            "pos": "<ACTION_lightVerb>把</ACTION_lightVerb><ENTITY_pronoun>他</ENTITY_pronoun><ACTION_verb>問</ACTION_verb><FUNC_inner>得</FUNC_inner><VerbP>哭了</VerbP><ACTION_verb>出來</ACTION_verb>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(問|問起|追問|詢問|問道|問到|反問|問說|談|質問|問了)</(ACTION_verb|VerbP)>",
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(哭了|笑了|叫了|哭出來|玩了|站了|大哭|哭|叫著|掉淚|笑出來)</(ACTION_verb|VerbP)>",
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(出來|出來了|出去|進去|拿出來|出|過來|下來|出了|進來|上來)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<ACTION_lightVerb>把+</ACTION_lightVerb>(<ENTITY_pronoun>[^<]+</ENTITY_pronoun>)?<(ACTION_verb|VerbP)>問</(ACTION_verb|VerbP)>(<FUNC_in(ner|ter)>[^<]+</FUNC_in(ner|ter)>)?<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)><(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>"
+        },
+        "把小明問得哭了出來": {
+            "id": "c267f1ef-cc3c-4cb0-838f-d0cb5dd3f187",
+            "pos": "<ACTION_lightVerb>把</ACTION_lightVerb><ENTITY_nouny>小明</ENTITY_nouny><ACTION_verb>問</ACTION_verb><FUNC_inner>得</FUNC_inner><VerbP>哭了</VerbP><ACTION_verb>出來</ACTION_verb>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(問|問起|追問|詢問|問道|問到|反問|問說|談|質問|問了)</(ACTION_verb|VerbP)>",
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(哭了|笑了|叫了|哭出來|玩了|站了|大哭|哭|叫著|掉淚|笑出來)</(ACTION_verb|VerbP)>",
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(出來|出來了|出去|進去|拿出來|出|過來|下來|出了|進來|上來)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<ACTION_lightVerb>把</ACTION_lightVerb>(<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>){1,}<(ACTION_verb|VerbP)>問</(ACTION_verb|VerbP)>(<FUNC_in(ner|ter)>[^<]+</FUNC_in(ner|ter)>)?<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)><(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>"
+        }
+    },
+    "alias": {},
+    "prompt": {},
+    "document": []
+}

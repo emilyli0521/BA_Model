@@ -59,13 +59,6 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             # resultDICT[key].append(value)
             pass
 
-    if utterance == "把衣服哭得沒有人敢摸":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
-        else:
-            # write your code here
-            pass
-
     if utterance == "那位男孩把毛巾哭得沒有人敢碰":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)

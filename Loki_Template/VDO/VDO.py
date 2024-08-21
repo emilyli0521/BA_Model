@@ -209,6 +209,8 @@ def runLoki(inputLIST, filterLIST=[], refDICT={}):
         resultDICT["msg"] = lokiRst.getMessage()
     return resultDICT
 
+##print(resultDICT)
+
 def execLoki(content, filterLIST=[], splitLIST=[], refDICT={}):
     """
     input
@@ -277,17 +279,14 @@ def testIntent():
 
 
 if __name__ == "__main__":
-    inputSTR = "我把錢拿回家"
-    filterLIST = ["VerbDirectObject"]
+    inputSTR = ""
+    filterLIST = []
     splitLIST = ["！", "，", "。", "？", "!", ",", "\n", "；", "\u3000", ";"]
 
     resultDICT_VDO = execLoki(inputSTR, filterLIST=filterLIST, splitLIST=splitLIST)
-    if "VerbDirectObject" in resultDICT_VDO:
-        for entry in resultDICT_VDO["VerbDirectObject"]:
-            print(f"[VerbDirectObject] {entry['text']} ===> {entry['result']}")
-    else:
-        print("没有找到 VerbDirectObject 结果")    
-
+    
+    print(resultDICT_VDO)
+    
 
 ##    # 測試所有意圖
 ##    testIntent()

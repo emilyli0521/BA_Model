@@ -64,6 +64,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
+            # resultDICT[key].append(value)
             pass
 
     if utterance == "那位男孩把毛巾哭得沒有人敢碰":

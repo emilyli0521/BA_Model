@@ -1,0 +1,45 @@
+{
+    "language": "zh-tw",
+    "type": "advance",
+    "version": {
+        "atk": "v271",
+        "intent": "1.0"
+    },
+    "user_defined": {
+        "as_noun": [
+            "手帕"
+        ]
+    },
+    "utterance": {
+        "把床睡得沒人敢躺": {
+            "id": "4ee013ee-a037-4348-93b2-fa27d2db538a",
+            "pos": "<ACTION_lightVerb>把</ACTION_lightVerb><ENTITY_nouny>床</ENTITY_nouny><ACTION_verb>睡得</ACTION_verb><FUNC_negation>沒</FUNC_negation><ENTITY_noun>人</ENTITY_noun><ACTION_verb>敢躺</ACTION_verb>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(睡得|常睡|剛烤|像住|煮意|睏|唱得|保留完|避事|達勝|跳得)</(ACTION_verb|VerbP)>",
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(敢躺|)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<ACTION_lightVerb>把</ACTION_lightVerb>(<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>){1,}<(ACTION_verb|VerbP)>睡得</(ACTION_verb|VerbP)><FUNC_negation>[^<]+</FUNC_negation>(<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>)?<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>"
+        },
+        "把衣服哭得沒有人敢摸": {
+            "id": "17334a80-10fa-4596-89ae-c3655569cfc1",
+            "pos": "<ACTION_lightVerb>把</ACTION_lightVerb><ENTITY_noun>衣服</ENTITY_noun><ACTION_verb>哭得</ACTION_verb><FUNC_negation>沒有</FUNC_negation><ENTITY_noun>人</ENTITY_noun><ACTION_verb>敢摸</ACTION_verb>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(哭得|笑出來|想罵|直喊|睡去|哭到|呆|長嘆|嚇傻|聽得|號啕)</(ACTION_verb|VerbP)>",
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(敢摸|)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<ACTION_lightVerb>把</ACTION_lightVerb><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))><(ACTION_verb|VerbP)>哭得</(ACTION_verb|VerbP)><FUNC_negation>[^<]+</FUNC_negation><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))><(ACTION_verb|VerbP)>敢摸</(ACTION_verb|VerbP)>"
+        },
+        "那位男孩把毛巾哭得沒有人敢碰": {
+            "id": "9ef2fd3f-6172-4b3c-9210-4876a37ac136",
+            "pos": "<ENTITY_DetPhrase>那位</ENTITY_DetPhrase><ENTITY_nouny>男孩</ENTITY_nouny><ACTION_lightVerb>把</ACTION_lightVerb><ENTITY_noun>毛巾</ENTITY_noun><ACTION_verb>哭得</ACTION_verb><FUNC_negation>沒有</FUNC_negation><ENTITY_noun>人</ENTITY_noun><ACTION_verb>敢碰</ACTION_verb>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(哭得|笑出來|想罵|直喊|睡去|哭到|呆|長嘆|嚇傻|聽得|號啕)</(ACTION_verb|VerbP)>",
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(敢碰|敢惹|感覺了|呷飽|比得過|關心過|藏氏|敢收|跌倒過|奉敬|空帶)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "(<ENTITY_DetPhrase>[^<]+</ENTITY_DetPhrase>)?<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))><ACTION_lightVerb>把</ACTION_lightVerb><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))><(ACTION_verb|VerbP)>哭得</(ACTION_verb|VerbP)><FUNC_negation>[^<]+</FUNC_negation><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))><(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>"
+        }
+    },
+    "alias": {},
+    "prompt": {},
+    "document": []
+}

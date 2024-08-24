@@ -205,6 +205,8 @@ def runLoki(inputLIST, filterLIST=[], refDICT={}):
                     resultDICT[k].extend(lokiResultDICT[k])
                 else:
                     resultDICT[k].append(lokiResultDICT[k])
+                    
+                  
     else:
         resultDICT["msg"] = lokiRst.getMessage()
     return resultDICT

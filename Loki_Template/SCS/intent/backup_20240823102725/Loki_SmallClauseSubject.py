@@ -296,20 +296,6 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             resultDICT["action"] = "導引成"
             pass
 
-    if utterance == "把頭一抬":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
-        else:
-            resultDICT["action"] = "一抬"
-            pass
-
-    if utterance == "把貓冷得都不吵了":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
-        else:
-            resultDICT["action"] = "冷"
-            pass
-
     if utterance == "把高山當":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)

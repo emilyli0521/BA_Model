@@ -55,72 +55,63 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
-            # resultDICT[key].append(value)
+            resultDICT["action"] = "問"
             pass
 
     if utterance == "把她們哭得":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
-            # resultDICT[key].append(value)
+            resultDICT["action"] = "哭"
             pass
 
     if utterance == "把她們笑得":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
-            # resultDICT[key].append(value)
+            resultDICT["action"] = "笑"
             pass
 
     if utterance == "把她問了":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
-            # resultDICT[key].append(value)
+            resultDICT["action"] = "問了"
             pass
 
     if utterance == "把小明哭得":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
-            # resultDICT[key].append(value)
+            resultDICT["action"] = "哭得"
             pass
 
     if utterance == "把小明問了":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
-            # resultDICT[key].append(value)
+            resultDICT["action"] = "問了"
             pass
 
     if utterance == "把小明問得哭了出來":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
-            # resultDICT[key].append(value)
+            resultDICT["action"] = "問得"
             pass
 
     if utterance == "把小明笑得":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
-            # resultDICT[key].append(value)
+            resultDICT["action"] = "笑得"
             pass
 
     if utterance == "把被單睡得":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
-            # resultDICT[key].append(value)
+            resultDICT["action"] = "睡得"
             pass
 
     return resultDICT

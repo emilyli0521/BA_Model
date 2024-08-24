@@ -55,91 +55,72 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
-            resultDICT["action"] = "問"
-            pass
-
-    if utterance == "把她們哭得":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
-        else:
-            resultDICT["action"] = "哭"
-            pass
-
-    if utterance == "把她們笑得":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
-        else:
-            resultDICT["action"] = "笑"
-            pass
-
-    if utterance == "把她問了":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
-        else:
-            resultDICT["action"] = "問了"
-            pass
-
-    if utterance == "把小明哭得":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
-        else:
-            resultDICT["action"] = "哭得"
-            pass
-
-    if utterance == "把小明問了":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
-        else:
-            resultDICT["action"] = "問了"
-            pass
-
-    if utterance == "把小明問得哭了出來":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
-        else:
-            resultDICT["action"] = "問得"
-            pass
-
-    if utterance == "把小明笑得":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
-        else:
-            resultDICT["action"] = "笑得"
+            # write your code here
+            # resultDICT[key].append(value)
             pass
 
     if utterance == "把她們哭得很煩":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
-            resultDICT["action"] = "哭得"
+            # write your code here
+            # resultDICT[key].append(value)
             pass
 
     if utterance == "把她們笑得很開心":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
-            resultDICT["action"] = "笑得"
+            # write your code here
+            # resultDICT[key].append(value)
             pass
 
     if utterance == "把她問了很複雜的問題":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
-            resultDICT["action"] = "問了"
+            # write your code here
+            # resultDICT[key].append(value)
             pass
 
     if utterance == "把小明哭得很煩":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
-            resultDICT["action"] = "哭得"
+            # write your code here
+            # resultDICT[key].append(value)
+            pass
+
+    if utterance == "把小明問了":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            # write your code here
+            # resultDICT[key].append(value)
+            pass
+
+    if utterance == "把小明問得哭了出來":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            # write your code here
+            # resultDICT[key].append(value)
+            pass
+
+    if utterance == "把小明笑得":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            # write your code here
+            # resultDICT[key].append(value)
             pass
 
     if utterance == "把被單睡得":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
-            resultDICT["action"] = "睡得"
+            # write your code here
+            # resultDICT[key].append(value)
             pass
 
     return resultDICT

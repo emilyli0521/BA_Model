@@ -107,34 +107,6 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             resultDICT["action"] = "笑得"
             pass
 
-    if utterance == "把她們哭得很煩":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
-        else:
-            resultDICT["action"] = "哭得"
-            pass
-
-    if utterance == "把她們笑得很開心":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
-        else:
-            resultDICT["action"] = "笑得"
-            pass
-
-    if utterance == "把她問了很複雜的問題":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
-        else:
-            resultDICT["action"] = "問了"
-            pass
-
-    if utterance == "把小明哭得很煩":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
-        else:
-            resultDICT["action"] = "哭得"
-            pass
-
     if utterance == "把被單睡得":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)

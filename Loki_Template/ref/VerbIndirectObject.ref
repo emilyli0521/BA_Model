@@ -11,38 +11,6 @@
         ]
     },
     "utterance": {
-        "把她問了": {
-            "id": "fb295160-76d6-42c7-bc62-b755dab89028",
-            "pos": "<ACTION_lightVerb>把</ACTION_lightVerb><ENTITY_pronoun>她</ENTITY_pronoun><VerbP>問了</VerbP>",
-            "lexy": [
-                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(問了|回答了|問過|講了|說了|詢問了|提了|反問|想了|想問|問道)</(ACTION_verb|VerbP)>"
-            ],
-            "pattern": "<ACTION_lightVerb>把</ACTION_lightVerb><ENTITY_pronoun>[^<]+</ENTITY_pronoun><(ACTION_verb|VerbP)>問了</(ACTION_verb|VerbP)>"
-        },
-        "把她們哭得": {
-            "id": "3eb2577b-c737-458c-9012-755d7a187311",
-            "pos": "<ACTION_lightVerb>把</ACTION_lightVerb><ENTITY_pronoun>她們</ENTITY_pronoun><ACTION_verb>哭得</ACTION_verb>",
-            "lexy": [
-                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(哭得|笑出來|想罵|直喊|睡去|哭到|呆|長嘆|嚇傻|聽得|號啕)</(ACTION_verb|VerbP)>"
-            ],
-            "pattern": "<ACTION_lightVerb>把</ACTION_lightVerb><ENTITY_pronoun>[^<]+</ENTITY_pronoun><(ACTION_verb|VerbP)>哭得</(ACTION_verb|VerbP)>"
-        },
-        "把她們笑得": {
-            "id": "06defeac-4db9-46aa-aa04-2ab0f94e7f07",
-            "pos": "<ACTION_lightVerb>把</ACTION_lightVerb><ENTITY_pronoun>她們</ENTITY_pronoun><ACTION_verb>笑得</ACTION_verb>",
-            "lexy": [
-                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(笑得|直誇|直喊|聽得|笑出來|噴淚|笑問|看得|哭得|哭出來|惹得)</(ACTION_verb|VerbP)>"
-            ],
-            "pattern": "<ACTION_lightVerb>把</ACTION_lightVerb><ENTITY_pronoun>[^<]+</ENTITY_pronoun><(ACTION_verb|VerbP)>笑得</(ACTION_verb|VerbP)>"
-        },
-        "把小明哭得": {
-            "id": "91f4f2df-cf25-45c7-8ebe-a51251da500b",
-            "pos": "<ACTION_lightVerb>把</ACTION_lightVerb><ENTITY_nouny>小明</ENTITY_nouny><ACTION_verb>哭得</ACTION_verb>",
-            "lexy": [
-                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(哭得|笑出來|想罵|直喊|睡去|哭到|呆|長嘆|嚇傻|聽得|號啕)</(ACTION_verb|VerbP)>"
-            ],
-            "pattern": "<ACTION_lightVerb>把</ACTION_lightVerb>(<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>){1,}<(ACTION_verb|VerbP)>哭得</(ACTION_verb|VerbP)>"
-        },
         "把小明問了": {
             "id": "3dadd5d3-d164-423c-ac16-5edf1c5b1422",
             "pos": "<ACTION_lightVerb>把</ACTION_lightVerb><ENTITY_nouny>小明</ENTITY_nouny><VerbP>問了</VerbP>",
@@ -67,6 +35,24 @@
             ],
             "pattern": "<ACTION_lightVerb>把</ACTION_lightVerb>(<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>){1,}<(ACTION_verb|VerbP)>睡得</(ACTION_verb|VerbP)>"
         },
+        "把她們哭得很煩": {
+            "id": "7d7aa55f-acbc-4550-9d04-d460ce850b38",
+            "pos": "<ACTION_lightVerb>把</ACTION_lightVerb><ENTITY_pronoun>她們</ENTITY_pronoun><ACTION_verb>哭</ACTION_verb><FUNC_inner>得</FUNC_inner><MODIFIER>很</MODIFIER><ACTION_verb>煩</ACTION_verb>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(哭|哀哭|哭泣|啼哭|大哭|痛哭|悲泣|吵|大笑|哭鬧|笑)</(ACTION_verb|VerbP)>",
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(煩|煩人|煩擾|作弄|喧擾|嘲弄|困擾|干擾|影響|戲弄|打擾)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<ACTION_lightVerb>把</ACTION_lightVerb>(<ENTITY_pronoun>[^<]+</ENTITY_pronoun>)?<(ACTION_verb|VerbP)>哭</(ACTION_verb|VerbP)>(<FUNC_in(ner|ter)>[^<]+</FUNC_in(ner|ter)>)?(<(MODIFIER|ModifierP)>[^<]+</(MODIFIER|ModifierP)>)?<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>"
+        },
+        "把小明哭得很煩": {
+            "id": "a26173ec-6801-45fc-8cac-d7812b3d59fc",
+            "pos": "<ACTION_lightVerb>把</ACTION_lightVerb><ENTITY_nouny>小明</ENTITY_nouny><ACTION_verb>哭</ACTION_verb><FUNC_inner>得</FUNC_inner><MODIFIER>很</MODIFIER><ACTION_verb>煩</ACTION_verb>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(哭|哀哭|哭泣|啼哭|大哭|痛哭|悲泣|吵|大笑|哭鬧|笑)</(ACTION_verb|VerbP)>",
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(煩|煩人|煩擾|作弄|喧擾|嘲弄|困擾|干擾|影響|戲弄|打擾)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<ACTION_lightVerb>[^<]+</ACTION_lightVerb><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))><(ACTION_verb|VerbP)>哭</(ACTION_verb|VerbP)>(<FUNC_in(ner|ter)>[^<]+</FUNC_in(ner|ter)>)?(<(MODIFIER|ModifierP)>[^<]+</(MODIFIER|ModifierP)>)?<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>"
+        },
         "把他問得哭了出來": {
             "id": "7d3ddde7-9a83-4356-ab33-da4cd9b746d4",
             "pos": "<ACTION_lightVerb>把</ACTION_lightVerb><ENTITY_pronoun>他</ENTITY_pronoun><ACTION_verb>問</ACTION_verb><FUNC_inner>得</FUNC_inner><VerbP>哭了</VerbP><ACTION_verb>出來</ACTION_verb>",
@@ -77,6 +63,14 @@
             ],
             "pattern": "<ACTION_lightVerb>把+</ACTION_lightVerb>(<ENTITY_pronoun>[^<]+</ENTITY_pronoun>)?<(ACTION_verb|VerbP)>問</(ACTION_verb|VerbP)>(<FUNC_in(ner|ter)>[^<]+</FUNC_in(ner|ter)>)?<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)><(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>"
         },
+        "把她們笑得很開心": {
+            "id": "13a24b66-a4f6-428d-97d3-1cac9309d9b3",
+            "pos": "<ACTION_lightVerb>把</ACTION_lightVerb><ENTITY_pronoun>她們</ENTITY_pronoun><ACTION_verb>笑</ACTION_verb><FUNC_inner>得</FUNC_inner><DegreeP>很開心</DegreeP>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(笑|偷笑|傻笑|冷笑|大笑|失笑|暗笑|歡笑|狂笑|發笑|笑死)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<ACTION_lightVerb>把</ACTION_lightVerb>(<ENTITY_pronoun>[^<]+</ENTITY_pronoun>)?<(ACTION_verb|VerbP)>笑</(ACTION_verb|VerbP)>(<FUNC_in(ner|ter)>[^<]+</FUNC_in(ner|ter)>)?<DegreeP>[^<]+</DegreeP>"
+        },
         "把小明問得哭了出來": {
             "id": "c267f1ef-cc3c-4cb0-838f-d0cb5dd3f187",
             "pos": "<ACTION_lightVerb>把</ACTION_lightVerb><ENTITY_nouny>小明</ENTITY_nouny><ACTION_verb>問</ACTION_verb><FUNC_inner>得</FUNC_inner><VerbP>哭了</VerbP><ACTION_verb>出來</ACTION_verb>",
@@ -86,6 +80,14 @@
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(出來|出來了|出去|進去|拿出來|出|過來|下來|出了|進來|上來)</(ACTION_verb|VerbP)>"
             ],
             "pattern": "<ACTION_lightVerb>把</ACTION_lightVerb>(<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>){1,}<(ACTION_verb|VerbP)>問</(ACTION_verb|VerbP)>(<FUNC_in(ner|ter)>[^<]+</FUNC_in(ner|ter)>)?<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)><(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>"
+        },
+        "把她問了很複雜的問題": {
+            "id": "1f6aef68-adf9-4e52-9308-78af9d251c39",
+            "pos": "<ACTION_lightVerb>把</ACTION_lightVerb><ENTITY_pronoun>她</ENTITY_pronoun><VerbP>問了</VerbP><DegreeP>很複雜</DegreeP><FUNC_inner>的</FUNC_inner><ENTITY_noun>問題</ENTITY_noun>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(問了|回答了|問過|講了|說了|詢問了|提了|反問|想了|想問|問道)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<ACTION_lightVerb>把</ACTION_lightVerb>(<ENTITY_pronoun>[^<]+</ENTITY_pronoun>)?<(ACTION_verb|VerbP)>問了</(ACTION_verb|VerbP)><DegreeP>[^<]+</DegreeP>(<FUNC_in(ner|ter)>[^<]+</FUNC_in(ner|ter)>)?<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>"
         }
     },
     "alias": {},

@@ -55,6 +55,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
+##            resultDICT["action"] = args[14]
             resultDICT["action"] = "敢躺"
             pass
 

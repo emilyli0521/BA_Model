@@ -3,9 +3,7 @@
 
 
 import logging
-import json
 import re
-from pprint import pprint
 import sys
 
 
@@ -24,7 +22,7 @@ import SCO.SCO
 punctuationPat = re.compile("[,\.\?:;，。？、：；\n]+")
 
 def getLokiResult(inputSTR):
-    punctuationPat = re.compile("[,\.\?:;，。？、：；\n]+")
+    punctuationPat = re.compile("[,\.\?:;，。？：；\n]+")
     inputLIST = punctuationPat.sub("\n", inputSTR).split("\n")
     filterLIST = []
     splitLIST = ["！", "，", "。", "？", "!", ",", "\n", "；", "\u3000", ";","."]
@@ -45,26 +43,38 @@ def getLokiResult(inputSTR):
 
 
 if __name__ == "__main__":
-    while True:
-        inputSTR = input("請輸入任何有「把」的句子 \n")
-        resultDICT_VDO, resultDICT_SCS, resultDICT_VIO, resultDICT_SCO = getLokiResult(inputSTR)
+    runBOOL = True
+    
+    resultDICT_VDO = {}
+    resultDICT_SCS = {}
+    resultDICT_VIO = {}
+    resultDICT_SCO = {}
+    
+    while runBOOL:
+        inputSTR = input("請輸入一句含「把」的字句 (或按 Q 退出)：\n").strip()
         
-
-        if any([resultDICT_VDO, resultDICT_SCS, resultDICT_VIO, resultDICT_SCO]):
-            if resultDICT_VDO:
-                print("是「把」字句，是 VDO 把字句。")
-
-            elif resultDICT_SCS:
-                print("是「把」字句，是 SCS 把字句。")
-
-            elif resultDICT_VIO:
-                print("是「把」字句，是 VIO 把字句。")
-
-            elif resultDICT_SCO:
-                print("是「把」字句，是 SCO 把字句。")
-
+        if inputSTR.upper() == "Q":
+            runBOOL = False
         else:
-            print("不是「把」字句")
+                        
+            resultDICT_VDO, resultDICT_SCS, resultDICT_VIO, resultDICT_SCO = getLokiResult(inputSTR)
+            
+            if any([resultDICT_VDO, resultDICT_SCS, resultDICT_VIO, resultDICT_SCO]):
+                
+                if resultDICT_VDO:
+                    print("是「把」字句，是 VDO 把字句。")
+
+                elif resultDICT_SCS:
+                    print("是「把」字句，是 SCS 把字句。")
+
+                elif resultDICT_VIO:
+                    print("是「把」字句，是 VIO 把字句。")
+
+                elif resultDICT_SCO:
+                    print("是「把」字句，是 SCO 把字句。")
+
+            else:
+                print("不是「把」字句")
             
         
 

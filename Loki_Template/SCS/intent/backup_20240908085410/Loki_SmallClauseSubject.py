@@ -352,41 +352,6 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             resultDICT["action"] = "塗成"
             pass
 
-    if utterance == "把他的身體塗成五彩繽紛的顏色，":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
-        else:
-            resultDICT["action"] = "塗成"
-            pass
-
-    if utterance == "把當地以老古石堆砌成抗風的「蜂巢田」方式引進":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
-        else:
-            resultDICT["action"] = "引進"
-            pass
-
-    if utterance == "把眼皮睜開":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
-        else:
-            resultDICT["action"] = "睜開"
-            pass
-
-    if utterance == "把米包成粽子投入江中餵魚。":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
-        else:
-            resultDICT["action"] = "投入"
-            pass
-
-    if utterance == "把腳抬高":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
-        else:
-            resultDICT["action"] = "抬"
-            pass
-
     if utterance == "把高山當":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)

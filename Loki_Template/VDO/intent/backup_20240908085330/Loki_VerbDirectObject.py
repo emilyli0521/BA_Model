@@ -662,20 +662,6 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             resultDICT["action"] = "粧點"
             pass
 
-    if utterance == "把一幅畫賣給了老闆":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
-        else:
-            resultDICT["action"] = "賣給"
-            pass
-
-    if utterance == "把國家情勢導引成退化、退步的政府，":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
-        else:
-            resultDICT["action"] = "導引"
-            pass
-
     if utterance == "要把正確的知識告訴她們。":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)

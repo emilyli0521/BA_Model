@@ -65,7 +65,7 @@ for modulePath in glob("{}/intent/Loki_*.py".format(BASE_PATH)):
 
 LOKI_URL = "https://api.droidtown.co/Loki/BulkAPI/"
 try:
-    accountInfo = json.load(open(os.path.join(BASE_PATH, "account.info"), encoding="utf-8"))
+    accountInfo = json.load(open(os.path.join(BASE_PATH, "account.info.info"), encoding="utf-8"))
     USERNAME = accountInfo["username"]
     LOKI_KEY = accountInfo["loki_key"]
 except Exception as e:
@@ -281,7 +281,7 @@ def testIntent():
 
 
 if __name__ == "__main__":
-    inputSTR = ""
+    inputSTR = "我把你打了一頓"
     filterLIST = []
     splitLIST = ["！", "，", "。", "？", "!", ",", "\n", "；", "\u3000", ";"]
 

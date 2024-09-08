@@ -65,7 +65,7 @@ for modulePath in glob("{}/intent/Loki_*.py".format(BASE_PATH)):
 
 LOKI_URL = "https://api.droidtown.co/Loki/BulkAPI/"
 try:
-    accountInfo = json.load(open(os.path.join(BASE_PATH, "account.info"), encoding="utf-8"))
+    accountInfo = json.load(open(os.path.join(BASE_PATH, "account.info.info"), encoding="utf-8"))
     USERNAME = accountInfo["username"]
     LOKI_KEY = accountInfo["loki_key"]
 except Exception as e:
@@ -270,23 +270,32 @@ def testLoki(inputLIST, filterLIST):
 
 def testIntent():
     # SmallClauseSubject
-    print("[TEST] SmallClauseSubject")
+##    print("[TEST] SmallClauseSubject")
     inputLIST = ['把我當作','把高山當','把名片改成','把家父當做','把技藝傳給','把眼皮睜開','把編制壓到','把特別法變成','把網咖轉型成','把自主班當作','把頭抬起來，','把省議會改名為','把美味小吃當成','把人身去換金錢，','把一般民間消費當成','把入冬的台北粧點成','把網咖業者當賊看。','把他們笑得都不敢哭了','把公車路線與捷運接軌，','應該把日本文化傳到台灣。','把中央和地方增減數目相抵，','把墨色的變化發揮到了極致，','把人身去換金你說是不是有鬼！','把玉雕風格質與量與興衰劃分成','把中央部會總數由現行的卅六個下修到','把故事結束掉的每個深夜兀自唐突地發光。','把國民黨主席連戰、親民黨主席宋楚瑜、新黨都罵光了，']
     testLoki(inputLIST, ['SmallClauseSubject'])
-    print("")
+##    print("")
 
 
 if __name__ == "__main__":
-    # 測試所有意圖
-    testIntent()
-
-    # 測試其它句子
+    
+    inputSTR = "我把民進黨、國民黨都罵光了"
     filterLIST = []
     splitLIST = ["！", "，", "。", "？", "!", ",", "\n", "；", "\u3000", ";"]
-    # 設定參考資料
-    refDICT = { # value 必須為 list
-        #"key": []
-    }
-    resultDICT = execLoki("今天天氣如何？後天氣象如何？", filterLIST=filterLIST, refDICT=refDICT)                      # output => {"key": ["今天天氣"]}
-    resultDICT = execLoki("今天天氣如何？後天氣象如何？", filterLIST=filterLIST, splitLIST=splitLIST, refDICT=refDICT) # output => {"key": ["今天天氣", "後天氣象"]}
-    resultDICT = execLoki(["今天天氣如何？", "後天氣象如何？"], filterLIST=filterLIST, refDICT=refDICT)                # output => {"key": ["今天天氣", "後天氣象"]}
+
+    resultDICT_SCS = execLoki(inputSTR, filterLIST=filterLIST, splitLIST=splitLIST)
+    
+    print(resultDICT_SCS)
+    
+##    # 測試所有意圖
+##    testIntent()
+##
+##    # 測試其它句子
+##    filterLIST = []
+##    splitLIST = ["！", "，", "。", "？", "!", ",", "\n", "；", "\u3000", ";"]
+##    # 設定參考資料
+##    refDICT = { # value 必須為 list
+##        #"key": []
+##    }
+##    resultDICT = execLoki("今天天氣如何？後天氣象如何？", filterLIST=filterLIST, refDICT=refDICT)                      # output => {"key": ["今天天氣"]}
+##    resultDICT = execLoki("今天天氣如何？後天氣象如何？", filterLIST=filterLIST, splitLIST=splitLIST, refDICT=refDICT) # output => {"key": ["今天天氣", "後天氣象"]}
+##    resultDICT = execLoki(["今天天氣如何？", "後天氣象如何？"], filterLIST=filterLIST, refDICT=refDICT)                # output => {"key": ["今天天氣", "後天氣象"]}

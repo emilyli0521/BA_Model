@@ -1,2 +1,2 @@
 # BA_Model
-A linguistics-based BA processing model
+A linguistics-based Chinese BA Natural Language Understanding model

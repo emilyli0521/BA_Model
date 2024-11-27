@@ -601,15 +601,6 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             # resultDICT[key].append(value)
             pass
 
-    if utterance == "把正確的知識告訴她們。":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
-            resultDICT["source"] = "reply"
-        else:
-            # write your code here
-            # resultDICT[key].append(value)
-            pass
-
     if utterance == "把每份包裹都看了":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
@@ -1007,6 +998,15 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             pass
 
     if utterance == "會把他踹好幾腳。":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+            resultDICT["source"] = "reply"
+        else:
+            # write your code here
+            # resultDICT[key].append(value)
+            pass
+
+    if utterance == "要把正確的知識告訴她們。":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
             resultDICT["source"] = "reply"

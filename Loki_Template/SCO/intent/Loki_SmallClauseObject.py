@@ -55,22 +55,42 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
-##            resultDICT["action"] = args[14]
             resultDICT["action"] = "敢躺"
             pass
 
-    if utterance == "把衣服哭得沒有人敢摸":
+    if utterance == "把作業本哭得沒有人能看得懂字跡":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
-            resultDICT["action"] = "敢摸"
+            resultDICT["action"] = "哭得"
+            pass
+
+    if utterance == "把床單睡得主人不願再躺":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["action"] = "哭得"
+            pass
+
+    if utterance == "把毛衣哭得沒有人願意穿":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["action"] = "哭得"
+            pass
+
+    if utterance == "把玩具哭得同學都不敢摸。":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["action"] = "哭得"
             pass
 
     if utterance == "那位男孩把毛巾哭得沒有人敢碰":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
-            resultDICT["action"] = "敢碰"
+            resultDICT["action"] = "哭得"
             pass
 
     return resultDICT

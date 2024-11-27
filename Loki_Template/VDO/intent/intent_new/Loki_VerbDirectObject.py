@@ -22,6 +22,7 @@ import os
 
 DEBUG = True
 CHATBOT_MODE = False
+INTENT_NAME = "VerbDirectObject"
 
 userDefinedDICT = {}
 try:
@@ -69,24 +70,6 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             # resultDICT[key].append(value)
             pass
 
-    if utterance == "想要把這個獎獻給":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
-            resultDICT["source"] = "reply"
-        else:
-            # write your code here
-            # resultDICT[key].append(value)
-            pass
-
-    if utterance == "想要把這個獎獻給他的太太和兒子。":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
-            resultDICT["source"] = "reply"
-        else:
-            # write your code here
-            # resultDICT[key].append(value)
-            pass
-
     if utterance == "想要把這個禮物與所有台中人共享":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
@@ -97,24 +80,6 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             pass
 
     if utterance == "應該把別人做的作品拿出來看一看":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
-            resultDICT["source"] = "reply"
-        else:
-            # write your code here
-            # resultDICT[key].append(value)
-            pass
-
-    if utterance == "把「九二共識」和「一中」視為":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
-            resultDICT["source"] = "reply"
-        else:
-            # write your code here
-            # resultDICT[key].append(value)
-            pass
-
-    if utterance == "把「命運共同體」掛在":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
             resultDICT["source"] = "reply"
@@ -159,7 +124,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             # resultDICT[key].append(value)
             pass
 
-    if utterance == "把一個堅倔強又脆弱細緻的女人深深刻劃在":
+    if utterance == "把一個大好機會錯過了。":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
             resultDICT["source"] = "reply"
@@ -177,16 +142,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             # resultDICT[key].append(value)
             pass
 
-    if utterance == "把一百零八種煩惱視為":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
-            resultDICT["source"] = "reply"
-        else:
-            # write your code here
-            # resultDICT[key].append(value)
-            pass
-
-    if utterance == "把七十年代曖昧不清的「鄉土」觀念明確的重定為":
+    if utterance == "把五十歲帶到":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
             resultDICT["source"] = "reply"
@@ -204,7 +160,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             # resultDICT[key].append(value)
             pass
 
-    if utterance == "把他換下場。":
+    if utterance == "把他一推":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
             resultDICT["source"] = "reply"
@@ -213,7 +169,25 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             # resultDICT[key].append(value)
             pass
 
-    if utterance == "把他看三遍了。":
+    if utterance == "把他們從無所事事的環境裡拯救出來":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+            resultDICT["source"] = "reply"
+        else:
+            # write your code here
+            # resultDICT[key].append(value)
+            pass
+
+    if utterance == "把他換下場":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+            resultDICT["source"] = "reply"
+        else:
+            # write your code here
+            # resultDICT[key].append(value)
+            pass
+
+    if utterance == "把他看三遍了":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
             resultDICT["source"] = "reply"
@@ -231,6 +205,15 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             # resultDICT[key].append(value)
             pass
 
+    if utterance == "把你刻在":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+            resultDICT["source"] = "reply"
+        else:
+            # write your code here
+            # resultDICT[key].append(value)
+            pass
+
     if utterance == "把你打了":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
@@ -240,25 +223,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             # resultDICT[key].append(value)
             pass
 
-    if utterance == "把你打了一頓":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
-            resultDICT["source"] = "reply"
-        else:
-            # write your code here
-            # resultDICT[key].append(value)
-            pass
-
-    if utterance == "把便宜佔盡了。":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
-            resultDICT["source"] = "reply"
-        else:
-            # write your code here
-            # resultDICT[key].append(value)
-            pass
-
-    if utterance == "把俄羅斯視為":
+    if utterance == "把你罵了一頓":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
             resultDICT["source"] = "reply"
@@ -285,6 +250,15 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             # resultDICT[key].append(value)
             pass
 
+    if utterance == "把先生所賺的錢一點一滴的存起來":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+            resultDICT["source"] = "reply"
+        else:
+            # write your code here
+            # resultDICT[key].append(value)
+            pass
+
     if utterance == "把光圈由５﹒６往８﹒０逐漸縮小，":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
@@ -294,7 +268,34 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             # resultDICT[key].append(value)
             pass
 
-    if utterance == "把入冬的台北粧點成":
+    if utterance == "把全部的文章都修改了":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+            resultDICT["source"] = "reply"
+        else:
+            # write your code here
+            # resultDICT[key].append(value)
+            pass
+
+    if utterance == "把公車路線與捷運接軌，":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+            resultDICT["source"] = "reply"
+        else:
+            # write your code here
+            # resultDICT[key].append(value)
+            pass
+
+    if utterance == "把初夜留待結婚之後":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+            resultDICT["source"] = "reply"
+        else:
+            # write your code here
+            # resultDICT[key].append(value)
+            pass
+
+    if utterance == "把十塊錢給我":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
             resultDICT["source"] = "reply"
@@ -330,7 +331,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             # resultDICT[key].append(value)
             pass
 
-    if utterance == "把四個經營區調整為":
+    if utterance == "把嘻哈推廣到台灣":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
             resultDICT["source"] = "reply"
@@ -366,6 +367,33 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             # resultDICT[key].append(value)
             pass
 
+    if utterance == "把國民黨、民進黨都罵光了":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+            resultDICT["source"] = "reply"
+        else:
+            # write your code here
+            # resultDICT[key].append(value)
+            pass
+
+    if utterance == "把國民黨主席連戰、親民黨主席宋楚瑜、新黨都罵光了":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+            resultDICT["source"] = "reply"
+        else:
+            # write your code here
+            # resultDICT[key].append(value)
+            pass
+
+    if utterance == "把國民黨和民進黨都罵光了":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+            resultDICT["source"] = "reply"
+        else:
+            # write your code here
+            # resultDICT[key].append(value)
+            pass
+
     if utterance == "把圖畫書和純繪畫做了巧妙的結合，":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
@@ -384,7 +412,16 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             # resultDICT[key].append(value)
             pass
 
-    if utterance == "把她殺了哥哥。":
+    if utterance == "把墨色的變化發揮到了極致，":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+            resultDICT["source"] = "reply"
+        else:
+            # write your code here
+            # resultDICT[key].append(value)
+            pass
+
+    if utterance == "把她整個人推倒在地上":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
             resultDICT["source"] = "reply"
@@ -402,25 +439,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             # resultDICT[key].append(value)
             pass
 
-    if utterance == "把它粗略區分為二，":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
-            resultDICT["source"] = "reply"
-        else:
-            # write your code here
-            # resultDICT[key].append(value)
-            pass
-
     if utterance == "把對象內在的或外在的那份美充分挖掘出來，":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
-            resultDICT["source"] = "reply"
-        else:
-            # write your code here
-            # resultDICT[key].append(value)
-            pass
-
-    if utterance == "把小王殺了女友":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
             resultDICT["source"] = "reply"
@@ -438,7 +457,43 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             # resultDICT[key].append(value)
             pass
 
-    if utterance == "把我帶往何處？":
+    if utterance == "把很多事情都交給陳亞蘭處理":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+            resultDICT["source"] = "reply"
+        else:
+            # write your code here
+            # resultDICT[key].append(value)
+            pass
+
+    if utterance == "把我問倒了":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+            resultDICT["source"] = "reply"
+        else:
+            # write your code here
+            # resultDICT[key].append(value)
+            pass
+
+    if utterance == "把我帶往何處":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+            resultDICT["source"] = "reply"
+        else:
+            # write your code here
+            # resultDICT[key].append(value)
+            pass
+
+    if utterance == "把我的信忘了":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+            resultDICT["source"] = "reply"
+        else:
+            # write your code here
+            # resultDICT[key].append(value)
+            pass
+
+    if utterance == "把我那老一套耳提面命，":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
             resultDICT["source"] = "reply"
@@ -474,7 +529,34 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             # resultDICT[key].append(value)
             pass
 
+    if utterance == "把所有的情感放在":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+            resultDICT["source"] = "reply"
+        else:
+            # write your code here
+            # resultDICT[key].append(value)
+            pass
+
     if utterance == "把所有的石板棺都搶救下來，":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+            resultDICT["source"] = "reply"
+        else:
+            # write your code here
+            # resultDICT[key].append(value)
+            pass
+
+    if utterance == "把整個村莊的人民全部殘殺":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+            resultDICT["source"] = "reply"
+        else:
+            # write your code here
+            # resultDICT[key].append(value)
+            pass
+
+    if utterance == "把旅遊景點好好呈現":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
             resultDICT["source"] = "reply"
@@ -519,7 +601,25 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             # resultDICT[key].append(value)
             pass
 
-    if utterance == "把洋基隊打者三振得":
+    if utterance == "把正確的知識告訴她們。":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+            resultDICT["source"] = "reply"
+        else:
+            # write your code here
+            # resultDICT[key].append(value)
+            pass
+
+    if utterance == "把每份包裹都看了":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+            resultDICT["source"] = "reply"
+        else:
+            # write your code here
+            # resultDICT[key].append(value)
+            pass
+
+    if utterance == "把水裝在":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
             resultDICT["source"] = "reply"
@@ -555,7 +655,25 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             # resultDICT[key].append(value)
             pass
 
+    if utterance == "把物品廉價銷售":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+            resultDICT["source"] = "reply"
+        else:
+            # write your code here
+            # resultDICT[key].append(value)
+            pass
+
     if utterance == "把瑪莉打了一頓":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+            resultDICT["source"] = "reply"
+        else:
+            # write your code here
+            # resultDICT[key].append(value)
+            pass
+
+    if utterance == "把相關事實告知":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
             resultDICT["source"] = "reply"
@@ -573,7 +691,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             # resultDICT[key].append(value)
             pass
 
-    if utterance == "把真、善、美圈選為三類最高級的價值判斷就已經開始了。":
+    if utterance == "把相關附屬設施納入評估，":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
             resultDICT["source"] = "reply"
@@ -591,6 +709,15 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             # resultDICT[key].append(value)
             pass
 
+    if utterance == "把窯廠遷到大坑，":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+            resultDICT["source"] = "reply"
+        else:
+            # write your code here
+            # resultDICT[key].append(value)
+            pass
+
     if utterance == "把競選Ｔ恤放在車上，":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
@@ -600,7 +727,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             # resultDICT[key].append(value)
             pass
 
-    if utterance == "把約翰殺了父親":
+    if utterance == "把網撒下去":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
             resultDICT["source"] = "reply"
@@ -645,7 +772,25 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             # resultDICT[key].append(value)
             pass
 
-    if utterance == "把色情在一個月內趕出轄區":
+    if utterance == "把華人歷史故事散佈到":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+            resultDICT["source"] = "reply"
+        else:
+            # write your code here
+            # resultDICT[key].append(value)
+            pass
+
+    if utterance == "把蚊蟲驅趕至門口":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+            resultDICT["source"] = "reply"
+        else:
+            # write your code here
+            # resultDICT[key].append(value)
+            pass
+
+    if utterance == "把複雜晦暗的現代社會以純化的方式來表現":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
             resultDICT["source"] = "reply"
@@ -699,6 +844,15 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             # resultDICT[key].append(value)
             pass
 
+    if utterance == "把這些勞動規約標準統一化。":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+            resultDICT["source"] = "reply"
+        else:
+            # write your code here
+            # resultDICT[key].append(value)
+            pass
+
     if utterance == "把這些存心與行動與週遭的人分享，":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
@@ -708,7 +862,25 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             # resultDICT[key].append(value)
             pass
 
+    if utterance == "把這個禮物獻給":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+            resultDICT["source"] = "reply"
+        else:
+            # write your code here
+            # resultDICT[key].append(value)
+            pass
+
     if utterance == "把這四部電影找來好好欣賞。":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+            resultDICT["source"] = "reply"
+        else:
+            # write your code here
+            # resultDICT[key].append(value)
+            pass
+
+    if utterance == "把這塊肉切切":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
             resultDICT["source"] = "reply"
@@ -780,7 +952,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             # resultDICT[key].append(value)
             pass
 
-    if utterance == "把錢拿回來，":
+    if utterance == "把錢拿回來":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
             resultDICT["source"] = "reply"
@@ -807,6 +979,15 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             # resultDICT[key].append(value)
             pass
 
+    if utterance == "把開會摘要連同圖文並茂的曲線圖或表格即時存檔":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+            resultDICT["source"] = "reply"
+        else:
+            # write your code here
+            # resultDICT[key].append(value)
+            pass
+
     if utterance == "把雙胞女兒放在樹下，":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
@@ -816,7 +997,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             # resultDICT[key].append(value)
             pass
 
-    if utterance == "會把他踹好幾腳。":
+    if utterance == "把頭一抬":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
             resultDICT["source"] = "reply"
@@ -825,7 +1006,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             # resultDICT[key].append(value)
             pass
 
-    if utterance == "要把正確的知識告訴她們。":
+    if utterance == "會把他踹好幾腳。":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
             resultDICT["source"] = "reply"

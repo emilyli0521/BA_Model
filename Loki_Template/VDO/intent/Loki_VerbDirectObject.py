@@ -100,20 +100,6 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             resultDICT["action"] = "看一看"
             pass
 
-    if utterance == "把「九二共識」和「一中」視為":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
-        else:
-            resultDICT["action"] = "視為"
-            pass
-
-    if utterance == "把「命運共同體」掛在":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
-        else:
-            resultDICT["action"] = "掛在"
-            pass
-
     if utterance == "把「火」和「濕氣」徹底清除，":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
@@ -149,20 +135,6 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             resultDICT["action"] = "深深刻劃在"
             pass
 
-    if utterance == "把一百零八種煩惱視為":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
-        else:
-            resultDICT["action"] = "視為"
-            pass
-
-    if utterance == "把七十年代曖昧不清的「鄉土」觀念明確的重定為":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
-        else:
-            resultDICT["action"] = "重定為"
-            pass
-
     if utterance == "把人物的情感全部調動起來":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
@@ -177,13 +149,6 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             resultDICT["action"] = "換下場"
             pass
 
-    if utterance == "把他看三遍了。":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
-        else:
-            resultDICT["action"] = "看三遍"
-            pass
-
     if utterance == "把作品特色淋漓盡致的發揮，":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
@@ -196,13 +161,6 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             resultDICT["response"] = getResponse(utterance, args)
         else:
             resultDICT["action"] = "佔盡"
-            pass
-
-    if utterance == "把俄羅斯視為":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
-        else:
-            resultDICT["action"] = "視為"
             pass
 
     if utterance == "把傳統廟會元素以當代藝術形式呈現，":
@@ -247,13 +205,6 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             resultDICT["action"] = "喝"
             pass
 
-    if utterance == "把四個經營區調整為":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
-        else:
-            resultDICT["action"] = "調整"
-            pass
-
     if utterance == "把四周的景象都映入":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
@@ -275,25 +226,11 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             resultDICT["action"] = "結合"
             pass
 
-    if utterance == "把她殺了哥哥。":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
-        else:
-            resultDICT["action"] = "殺了"
-            pass
-
     if utterance == "把它登子去典當，":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             resultDICT["action"] = "典當"
-            pass
-
-    if utterance == "把它粗略區分為二，":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
-        else:
-            resultDICT["action"] = "區分"
             pass
 
     if utterance == "把對象內在的或外在的那份美充分挖掘出來，":
@@ -373,13 +310,6 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             resultDICT["action"] = "擱置"
             pass
 
-    if utterance == "把洋基隊打者三振得":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
-        else:
-            resultDICT["action"] = "三振"
-            pass
-
     if utterance == "把滿是蜘蛛絲的祖宗牌位拿出來看，":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
@@ -408,20 +338,6 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             resultDICT["action"] = "帶來"
             pass
 
-    if utterance == "把相關附屬設施納入評估，":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
-        else:
-            resultDICT["action"] = "評估"
-            pass
-
-    if utterance == "把真、善、美圈選為三類最高級的價值判斷就已經開始了。":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
-        else:
-            resultDICT["action"] = "圈選"
-            pass
-
     if utterance == "把稅繳進了台北市":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
@@ -440,7 +356,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
-            resultDICT["action"] = "評分"
+            resultDICT["action"] = "平分"
             pass
 
     if utterance == "把自己最愛惜的兒子賣去，":
@@ -510,7 +426,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
-            resultDICT["action"] = "找"
+            resultDICT["action"] = "找電影"
             pass
 
     if utterance == "把這張錯漏候選人號次的公報拿到他的競選總部提出檢舉，":
@@ -598,39 +514,11 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             resultDICT["action"] = "踹"
             pass
 
-    if utterance == "把小王殺了女友":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
-        else:
-            resultDICT["action"] = "殺了"
-            pass
-
-    if utterance == "把約翰殺了父親":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
-        else:
-            resultDICT["action"] = "殺了"
-            pass
-
     if utterance == "把臉一板":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             resultDICT["action"] = "板著臉"
-            pass
-
-    if utterance == "把軟底改為硬底":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
-        else:
-            resultDICT["action"] = "板著臉"
-            pass
-
-    if utterance == "把你打了":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
-        else:
-            resultDICT["action"] = "打了"
             pass
 
     if utterance == "把你打了一頓":
@@ -648,20 +536,6 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             resultDICT["action"] = "哭垮了"
             pass
 
-    if utterance == "把瑪莉打了一頓":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
-        else:
-            resultDICT["action"] = "打了"
-            pass
-
-    if utterance == "把入冬的台北粧點成":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
-        else:
-            resultDICT["action"] = "粧點"
-            pass
-
     if utterance == "把一幅畫賣給了老闆":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
@@ -676,11 +550,327 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             resultDICT["action"] = "導引"
             pass
 
-    if utterance == "要把正確的知識告訴她們。":
+    if utterance == "把蚊蟲驅趕至門口":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["action"] = "驅趕"
+            pass
+
+    if utterance == "把這些勞動規約標準統一化。":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["action"] = "統一化"
+            pass
+
+    if utterance == "把一個大好機會錯過了。":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["action"] = "錯過了"
+            pass
+
+    if utterance == "把他一推":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["action"] = "推他"
+            pass
+
+    if utterance == "把他們從無所事事的環境裡拯救出來":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["action"] = "拯救他"
+            pass
+
+    if utterance == "把你刻在":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["action"] = "刻你在"
+            pass
+
+    if utterance == "把保險套使用法在內的相關資訊告訴":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             resultDICT["action"] = "告訴"
             pass
-        
+
+    if utterance == "把先生所賺的錢一點一滴的存起來":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["action"] = "存起來"
+            pass
+
+    if utterance == "把全部的文章都修改了":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["action"] = "修改來"
+            pass
+
+    if utterance == "把初夜留待結婚之後":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["action"] = "留待"
+            pass
+
+    if utterance == "把嘻哈推廣到台灣":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["action"] = "推廣到"
+            pass
+
+    if utterance == "把國民黨、民進黨都罵光了":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["action"] = "罵光"
+            pass
+
+    if utterance == "把國民黨主席連戰、親民黨主席宋楚瑜、新黨都罵光了":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["action"] = "罵光"
+            pass
+
+    if utterance == "把國民黨和民進黨都罵光了":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["action"] = "罵光"
+            pass
+
+    if utterance == "把墨色的變化發揮到了極致，":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["action"] = "發揮"
+            pass
+
+    if utterance == "把她整個人推倒在地上":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["action"] = "推倒"
+            pass
+
+    if utterance == "把小明一推":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["action"] = "推小明"
+            pass
+
+    if utterance == "把很多事情都交給陳亞蘭處理":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["action"] = "交很多事情"
+            pass
+
+    if utterance == "把我的信忘了":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["action"] = "忘了信"
+            pass
+
+    if utterance == "把我那老一套耳提面命，":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["action"] = "耳提面命"
+            pass
+
+    if utterance == "把整個村莊的人民全部殘殺":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["action"] = "殘殺"
+            pass
+
+    if utterance == "把旅遊景點好好呈現":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["action"] = "呈現"
+            pass
+
+    if utterance == "把每份包裹都看了":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["action"] = "看了"
+            pass
+
+    if utterance == "把相關事實告知":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["action"] = "告知"
+            pass
+
+    if utterance == "把窯廠遷到大坑，":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["action"] = "遷"
+            pass
+
+    if utterance == "把網撒下去":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["action"] = "撒網"
+            pass
+
+    if utterance == "把華人歷史故事散佈到":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["action"] = "散佈歷史故事"
+            pass
+
+    if utterance == "把這塊肉切切":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["action"] = "切肉"
+            pass
+
+    if utterance == "把開會摘要連同圖文並茂的曲線圖或表格即時存檔":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["action"] = "存檔"
+            pass
+
+    if utterance == "把五十歲帶到":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["action"] = "帶五十歲"
+            pass
+
+    if utterance == "把你罵了一頓":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["action"] = "罵了你"
+            pass
+
+    if utterance == "把公車路線與捷運接軌，":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["action"] = "接軌公車路線"
+            pass
+
+    if utterance == "把我問倒了":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["action"] = "問倒我"
+            pass
+
+    if utterance == "把所有的情感放在":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["action"] = "問倒我"
+            pass
+
+    if utterance == "把物品廉價銷售":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["action"] = "銷售物品"
+            pass
+
+    if utterance == "把複雜晦暗的現代社會以純化的方式來表現":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["action"] = "表現"
+            pass
+
+    if utterance == "把這個禮物獻給":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["action"] = "獻禮"
+            pass
+
+    if utterance == "把他換下場":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["action"] = "換下場"
+            pass
+
+    if utterance == "把他看三遍了":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["action"] = "看三遍了"
+            pass
+
+    if utterance == "把我帶往何處":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["action"] = "帶我"
+            pass
+
+    if utterance == "把水裝在":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["action"] = "裝水"
+            pass
+
+    if utterance == "把相關附屬設施納入評估，":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["action"] = "納入評估設施"
+            pass
+
+    if utterance == "把錢拿回來":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["action"] = "拿錢"
+            pass
+
+    if utterance == "把十塊錢給我":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["action"] = "給我"
+            pass
+
+    if utterance == "要把正確的知識告訴她們。":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["action"] = "告訴他們"
+            pass
+
+    if utterance == "把頭一抬":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["action"] = "抬頭"
+            pass
+
+       
     return resultDICT

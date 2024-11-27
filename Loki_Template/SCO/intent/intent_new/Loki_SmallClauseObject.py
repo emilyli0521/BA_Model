@@ -22,6 +22,7 @@ import os
 
 DEBUG = True
 CHATBOT_MODE = False
+INTENT_NAME = "SmallClauseObject"
 
 userDefinedDICT = {}
 try:
@@ -51,25 +52,46 @@ def getResponse(utterance, args):
 
 def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
     debugInfo(inputSTR, utterance)
+    if utterance == "把作業本哭得沒有人能看得懂字跡":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+            resultDICT["source"] = "reply"
+        else:
+            # write your code here
+            # resultDICT[key].append(value)
+            pass
+
+    if utterance == "把床單睡得主人不願再躺":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+            resultDICT["source"] = "reply"
+        else:
+            # write your code here
+            # resultDICT[key].append(value)
+            pass
+
     if utterance == "把床睡得沒人敢躺":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
+            resultDICT["source"] = "reply"
         else:
             # write your code here
             # resultDICT[key].append(value)
             pass
 
-    if utterance == "把衣服哭得沒有人敢摸":
+    if utterance == "把毛衣哭得沒有人願意穿":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
+            resultDICT["source"] = "reply"
         else:
             # write your code here
             # resultDICT[key].append(value)
             pass
 
-    if utterance == "那位男孩把毛巾哭得沒有人敢碰":
+    if utterance == "把玩具哭得同學都不敢摸。":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
+            resultDICT["source"] = "reply"
         else:
             # write your code here
             # resultDICT[key].append(value)

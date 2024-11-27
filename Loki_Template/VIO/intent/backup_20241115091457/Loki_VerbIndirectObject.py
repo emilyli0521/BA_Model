@@ -22,6 +22,7 @@ import os
 
 DEBUG = True
 CHATBOT_MODE = False
+INTENT_NAME = "VerbIndirectObject"
 
 userDefinedDICT = {}
 try:
@@ -51,67 +52,52 @@ def getResponse(utterance, args):
 
 def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
     debugInfo(inputSTR, utterance)
-    if utterance == "把他問得哭了出來":
+    if utterance == "把他罰了":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
+            resultDICT["source"] = "reply"
         else:
-            resultDICT["action"] = "問"
+            resultDICT["action"] = "罰了"
             pass
 
-    if utterance == "把她們哭得":
+    if utterance == "把他罰了兩塊錢":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
+            resultDICT["source"] = "reply"
         else:
-            resultDICT["action"] = "哭"
+            resultDICT["action"] = "罰了"
             pass
 
-    if utterance == "把她們笑得":
+    if utterance == "把他罰了很多錢":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
+            resultDICT["source"] = "reply"
         else:
-            resultDICT["action"] = "笑"
+            resultDICT["action"] = "罰了"
             pass
 
-    if utterance == "把她問了":
+    if utterance == "把她問了很複雜的問題":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
+            resultDICT["source"] = "reply"
         else:
             resultDICT["action"] = "問了"
-            pass
-
-    if utterance == "把小明哭得":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
-        else:
-            resultDICT["action"] = "哭得"
             pass
 
     if utterance == "把小明問了":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
+            resultDICT["source"] = "reply"
         else:
             resultDICT["action"] = "問了"
             pass
 
-    if utterance == "把小明問得哭了出來":
+    if utterance == "把小明罰了":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
+            resultDICT["source"] = "reply"
         else:
-            resultDICT["action"] = "問得"
-            pass
-
-    if utterance == "把小明笑得":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
-        else:
-            resultDICT["action"] = "笑得"
-            pass
-
-    if utterance == "把被單睡得":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
-        else:
-            resultDICT["action"] = "睡得"
+            resultDICT["action"] = "罰了"
             pass
 
     return resultDICT

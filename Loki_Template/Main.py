@@ -17,7 +17,7 @@ import SCS.SCS
 import VIO.VIO
 import SCO.SCO
 
-##logging.basicConfig(level=logging.DEBUG)
+#logging.basicConfig(level=logging.DEBUG)
 
 punctuationPat = re.compile("[,\.\?:;，。？、：；\n]+")
 

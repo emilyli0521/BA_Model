@@ -53,8 +53,20 @@ import math
 import os
 import re
 
+from ArticutAPI import ArticutAPI
+
 BASE_PATH = os.path.dirname(os.path.abspath(__file__))
 CWD_PATH = str(Path.cwd())
+
+
+articut = ArticutAPI.Articut(username="a0930591669@gmail.com", apikey="abi4k2-YpjE4b+lhJyM5N1gg%UM#iGn")
+
+LOKI_URL = "https://api.droidtown.co/Loki/BulkAPI/"
+DEBUG = True
+CHATBOT_MODE = False
+
+USERNAME = "a0930591669@gmail.com"
+LOKI_KEY = "KPW&jm%H^mXc#4Ob1KWONpeZjKSC^3h"
 
 lokiIntentDICT = {}
 for modulePath in glob("{}/intent/Loki_*.py".format(BASE_PATH)):
@@ -286,6 +298,11 @@ if __name__ == "__main__":
     splitLIST = ["！", "，", "。", "？", "!", ",", "\n", "；", "\u3000", ";"]
 
     resultDICT_VDO = execLoki(inputSTR, filterLIST=filterLIST, splitLIST=splitLIST)
+    
+    articut.parse(inputSTR)
+    verbStemLIST = articut.getVerbStemLIST(inputSTR)
+    
+    print(verbStemLIST)
     
     print(resultDICT_VDO)
     

@@ -19,6 +19,11 @@
 from random import sample
 import json
 import os
+import re
+from ArticutAPI import Articut
+
+articut = Articut(username="a0930591669@gmail.com", apikey="abi4k2-YpjE4b+lhJyM5N1gg%UM#iGn")
+
 
 DEBUG = True
 CHATBOT_MODE = False
@@ -55,8 +60,9 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
-            resultDICT["action"] = "敢躺"
+            resultDICT["action"] = "睡得"
             pass
+
 
     if utterance == "把作業本哭得沒有人能看得懂字跡":
         if CHATBOT_MODE:

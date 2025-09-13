@@ -16,17 +16,25 @@
         resultDICT    dict
 """
 
+from importlib.util import module_from_spec
+from importlib.util import spec_from_file_location
 from random import sample
 import json
 import os
-import sys
 
 INTENT_NAME = "SmallClauseSubject"
 CWD_PATH = os.path.dirname(os.path.abspath(__file__))
 
-sys.path.append(os.path.join(os.path.dirname(CWD_PATH), "lib"))
+def import_from_path(module_name, file_path):
+    spec = spec_from_file_location(module_name, file_path)
+    module = module_from_spec(spec)
+    spec.loader.exec_module(module)
+    return module
 
-from Account import *
+MODULE_DICT = {
+    "Account": import_from_path("SCS_lib_Account", os.path.join(os.path.dirname(CWD_PATH), "lib/Account.py")),
+    "LLM": import_from_path("SCS_lib_LLM", os.path.join(os.path.dirname(CWD_PATH), "lib/LLM.py"))
+}
 """
 Account 變數清單
 [變數] BASE_PATH         => 根目錄位置
@@ -38,8 +46,10 @@ Account 變數清單
 [變數] USER_DEFINED_FILE => 使用者自定詞典的檔案路徑
 [變數] USER_DEFINED_DICT => 使用者自定詞典內容
 """
-
-sys.path.pop(-1)
+REPLY_PATH = MODULE_DICT["Account"].REPLY_PATH
+ACCOUNT_DICT = MODULE_DICT["Account"].ACCOUNT_DICT
+USER_DEFINED_DICT = MODULE_DICT["Account"].USER_DEFINED_DICT
+getLLM = MODULE_DICT["LLM"].getLLM
 
 # userDefinedDICT (Deprecated)
 # 請使用 Account 變數 USER_DEFINED_DICT 代替
@@ -64,10 +74,13 @@ def debugInfo(inputSTR, utterance):
         print("[{}] {} ===> {}".format(INTENT_NAME, inputSTR, utterance))
 
 def getReply(utterance, args):
+    replySTR = ""
     try:
-        replySTR = sample(replyDICT[utterance], 1)[0].format(*args)
+        replySTR = sample(replyDICT[utterance], 1)[0]
+        if args:
+            replySTR = replySTR.format(*args)
     except:
-        replySTR = ""
+        pass
 
     return replySTR
 
@@ -96,6 +109,17 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern="", toolki
             pass
 
     if utterance == "把中央和地方增減數目相抵":
+        if CHATBOT:
+            replySTR = getReply(utterance, args)
+            if replySTR:
+                resultDICT["response"] = replySTR
+                resultDICT["source"] = "reply"
+        else:
+            # write your code here
+            # resultDICT[key].append(value)
+            pass
+
+    if utterance == "把事情放一邊":
         if CHATBOT:
             replySTR = getReply(utterance, args)
             if replySTR:
@@ -239,6 +263,17 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern="", toolki
             pass
 
     if utterance == "把咱家那位夜間部同學公諸於世":
+        if CHATBOT:
+            replySTR = getReply(utterance, args)
+            if replySTR:
+                resultDICT["response"] = replySTR
+                resultDICT["source"] = "reply"
+        else:
+            # write your code here
+            # resultDICT[key].append(value)
+            pass
+
+    if utterance == "把垃圾減量到最少是":
         if CHATBOT:
             replySTR = getReply(utterance, args)
             if replySTR:

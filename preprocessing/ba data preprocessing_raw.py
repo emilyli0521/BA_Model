@@ -18,7 +18,7 @@ def preprocess(fileName):
 
 
 if __name__ == "__main__":
-    fileNameSTR = "ba_raw_data_p80.txt"
+    fileNameSTR = "ba_raw_data_p108.txt"
     processed_content = preprocess(fileNameSTR)
     print(processed_content)
     #for match in processed_content:

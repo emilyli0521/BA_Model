@@ -167,14 +167,6 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             pass
 
 
-    if utterance == "把她殺了哥哥。":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
-        else:
-            resultDICT["action"] = "殺了"
-            pass
-
-
     if utterance == "把當地以老古石堆砌成":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
@@ -206,15 +198,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             resultDICT["action"] = "視如敝屣"
             pass
 
-
-    if utterance == "把他退學":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
-        else:
-            resultDICT["action"] = "退學"
-            pass
- 
-                
+               
     if utterance == "把大把的雜物碎片撒得":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
@@ -335,6 +319,20 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             resultDICT["response"] = getResponse(utterance, args)
         else:
             resultDICT["action"] = "分為"
+            pass
+
+    if utterance == "把垃圾減量到最少是":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["action"] = "是"
+            pass
+
+    if utterance == "把事情放一邊":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["action"] = "放一邊"
             pass
 
     if utterance == "把劍鞘上鑲著":

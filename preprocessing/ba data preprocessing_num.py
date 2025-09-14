@@ -18,11 +18,21 @@ def preprocess(fileName):
 
 
 if __name__ == "__main__":
-    fileNameSTR = "ba_raw_data_p108.txt"
-    processed_content = preprocess(fileNameSTR)
-    print(processed_content)
-    
+    # 絕對路徑設定
+    input_file = r"C:\Users\Emily\Desktop\BA_Model\preprocessing\data\ba_raw_data_p108.txt"
+    output_file = r"C:\Users\Emily\Desktop\BA_Model\preprocessing\data\purged_num_ba_raw_data_p108.txt"
+
+    processed_content = preprocess(input_file)
+
+    # 加上編號
     numbered_content = [f"{idx + 1}. {match}" for idx, match in enumerate(processed_content)]
 
-    with open("purged_num_{}".format(fileNameSTR), mode = "w", encoding = "utf-8") as g:
+    # 螢幕輸出
+    print(f"共找到 {len(numbered_content)} 句符合的句子。")
+    print("\n".join(numbered_content[:10]))  
+
+    # 存檔
+    with open(output_file, mode="w", encoding="utf-8") as g:
         g.write("\n".join(numbered_content))
+
+    print(f"處理後的結果已儲存到：{output_file}")
